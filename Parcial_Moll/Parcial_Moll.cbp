@@ -51,10 +51,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Validaciones.h" />
-		<Unit filename="fantasma.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="fantasma.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
