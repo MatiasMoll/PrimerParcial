@@ -25,7 +25,8 @@ int musico_buscarEmpty(Musico array[], int size, int* posicion);                
 int musico_buscarID(Musico array[], int size, int valorBuscado, int* posicion);                    //cambiar musico
 int musico_alta(Musico array[], int size, int* contadorID);                          //cambiar musico
 int musico_baja(Musico array[], int sizeArray);                                      //cambiar musico
-int musico_modificar(Musico array[], int sizeArray);                                //cambiar musico
+int musico_modificar(Musico array[], int sizeArray);
+int musico_mostrarDatosPersonales(Musico array[],int sizeArray);                            //cambiar musico
 int musico_listar(Musico array[],Instrumento arrayI[],int sizeI, int size);                 //cambiar musico
 void musico_mock(Musico arrayMusico[], int size,int *contadorId);                      //cambiar musico
 

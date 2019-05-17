@@ -18,9 +18,9 @@ int orquesta_Inicializar(Orquesta array[], int size)                            
     int retorno=-1;
     if(array!= NULL && size>0)
     {
-        for(; size>0; size--)
+        for(; size>=0; size--)
         {
-            array[size-1].isEmpty=1;
+            array[size].isEmpty=1;
         }
         retorno=0;
     }
@@ -155,9 +155,8 @@ int orquesta_baja(Orquesta array[], int sizeArray)                              
     int retorno=-1;
     int posicion;
     int id;
-    if(array!=NULL && sizeArray>=0)
+    if(array!= NULL && sizeArray>=0)
     {
-
         orquesta_listar(array,sizeArray);
         utn_getUnsignedInt("\nID a cancelar: ","\nError",1,sizeof(int),1,sizeArray,1,&id);          //cambiar si no se busca por ID
         if(orquesta_buscarID(array,sizeArray,id,&posicion)==-1)                                   //cambiar si no se busca por ID
@@ -190,7 +189,7 @@ int orquesta_listar(Orquesta array[], int size)                      //cambiar o
     char* tipoString;
     if(array!=NULL && size>=0)
     {
-        for(i=0; i<size; i++)
+        for(i=0; i<=size; i++)
         {
             if(array[i].isEmpty==1)
                 continue;
@@ -212,30 +211,30 @@ void orquesta_mock(Orquesta arrayOrquesta[], int size,int *contadorId)          
     //*******************************************************************
     arrayOrquesta[0].idUnico=*contadorId;
     arrayOrquesta[0].isEmpty=0;
-    arrayOrquesta[0].tipo=0;
-    strcpy(arrayOrquesta[0].nombre,"CCCCC");
-    strcpy(arrayOrquesta[0].lugar,"CCCCC");
+    arrayOrquesta[0].tipo=2;
+    strcpy(arrayOrquesta[0].nombre,"Filarmonica");
+    strcpy(arrayOrquesta[0].lugar,"Springfield");
     *contadorId = *contadorId +1;
 
     arrayOrquesta[1].idUnico=*contadorId;
     arrayOrquesta[1].isEmpty=0;
     arrayOrquesta[1].tipo=1;
-    strcpy(arrayOrquesta[1].nombre,"AAAAA");
-    strcpy(arrayOrquesta[1].lugar,"AAAAA");
+    strcpy(arrayOrquesta[1].nombre,"Sinfonica");
+    strcpy(arrayOrquesta[1].lugar,"Beethoven");
     *contadorId = *contadorId +1;
 
     arrayOrquesta[2].idUnico=*contadorId;
     arrayOrquesta[2].isEmpty=0;
-    arrayOrquesta[2].tipo=2;
-    strcpy(arrayOrquesta[2].nombre,"BBBBB");
-    strcpy(arrayOrquesta[2].lugar,"BBBBBB");
+    arrayOrquesta[2].tipo=1;
+    strcpy(arrayOrquesta[2].nombre,"La sinfonica");
+    strcpy(arrayOrquesta[2].lugar,"Lanus");
     *contadorId = *contadorId +1;
 
     arrayOrquesta[3].idUnico=*contadorId;
     arrayOrquesta[3].isEmpty=0;
-    arrayOrquesta[3].tipo=1;
-    strcpy(arrayOrquesta[3].nombre,"ZZZZZZ");
-    strcpy(arrayOrquesta[3].lugar,"BZZZZBBBBB");
+    arrayOrquesta[3].tipo=3;
+    strcpy(arrayOrquesta[3].nombre,"La Camara de Comercio");
+    strcpy(arrayOrquesta[3].lugar,"Varela");
 
 }
 

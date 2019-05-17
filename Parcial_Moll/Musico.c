@@ -19,9 +19,9 @@ int musico_Inicializar(Musico array[], int size)                                
     int retorno=-1;
     if(array!= NULL && size>0)
     {
-        for(;size>0;size--)
+        for(;size>=0;size--)
         {
-            array[size-1].isEmpty=1;
+            array[size].isEmpty=1;
         }
         retorno=0;
     }
@@ -164,11 +164,6 @@ int musico_baja(Musico array[], int sizeArray)                                  
     int id;
     if(array!=NULL && sizeArray>0)
     {
-        for(int i=0;sizeArray<=i;i++)
-        {
-            printf("\nId: %d\nNombre: %s\nApellido: %s",
-                    array[i].idUnico,array[i].nombre,array[i].apellido);
-        }
         utn_getUnsignedInt("\nID a cancelar: ","\nError",1,sizeof(int),1,sizeArray,1,&id);          //cambiar si no se busca por ID
         if(musico_buscarID(array,sizeArray,id,&posicion)==-1)                                   //cambiar si no se busca por ID
         {
@@ -196,19 +191,34 @@ int musico_baja(Musico array[], int sizeArray)                                  
 * \return int Return (-1) si Error [largo no valido o NULL pointer o no encuentra elementos con el valor buscado] - (0) si se modifica el elemento exitosamente
 *
 */
+int musico_mostrarDatosPersonales(Musico array[],int sizeArray)
+{
+    int retorno = 0;
+    int i;
+    if(array != NULL && sizeArray>=0)
+    {
+        for(i=0;sizeArray<=i;i++)
+        {
+            if(!array[i].isEmpty)
+            {
+                    printf("\nId: %d\nNombre: %s\nApellido: %s",
+                    array[i].idUnico,array[i].nombre,array[i].apellido);
+            }else
+                continue;
+        }
+        retorno = 1;
+    }
+    return retorno;
+}
 int musico_modificar(Musico array[], int sizeArray)                                //cambiar musico
 {
     int retorno=-1;
     int posicion;
     int id;                                                                                         //cambiar si no se busca por ID
     int opcion;
+    int i;
     if(array!=NULL && sizeArray>0)
     {
-        for(int i=0;sizeArray<=i;i++)
-        {
-            printf("\nId: %d\nNombre: %s\nApellido: %s",
-                    array[i].idUnico,array[i].nombre,array[i].apellido);
-        }
         utn_getUnsignedInt("\nID a modificar: ","\nError",1,sizeof(int),1,sizeArray,1,&id);         //cambiar si no se busca por ID
         if(musico_buscarID(array,sizeArray,id,&posicion)==-1)                                   //cambiar si no se busca por ID
         {
@@ -267,7 +277,7 @@ int musico_listar(Musico array[],Instrumento arrayI[],int sizeI, int size)      
             else
             {
                 if(!instrumento_buscarID(arrayI,sizeI,array[i].idInstrumento,&idIns)&&
-                !instrumento_tipo(arrayI[idIns],tipoIns))
+                instrumento_tipo(arrayI[idIns],tipoIns))
                 {
                     printf("\nID: %d\nNombre: %s\nNombre de Instrumento: %s\nTipo de Instrumento: %s\n",
                            array[i].idUnico,array[i].nombre,arrayI[idIns].nombre,tipoIns);
