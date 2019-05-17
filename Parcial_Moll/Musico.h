@@ -22,7 +22,8 @@ typedef struct
 
 int musico_Inicializar(Musico array[], int size);                                    //cambiar musico
 int musico_buscarEmpty(Musico array[], int size, int* posicion);                    //cambiar musico
-int musico_buscarID(Musico array[], int size, int valorBuscado, int* posicion);                    //cambiar musico
+int musico_buscarID(Musico array[], int size, int valorBuscado, int* posicion);
+int musico_buscarIdOrquesta(Musico array[], int size, int valorBuscado, int* posicion);                    //cambiar musico
 int musico_alta(Musico array[], int size, int* contadorID);                          //cambiar musico
 int musico_baja(Musico array[], int sizeArray);                                      //cambiar musico
 int musico_modificar(Musico array[], int sizeArray);

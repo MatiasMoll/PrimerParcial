@@ -150,15 +150,13 @@ int orquesta_alta(Orquesta array[], int size, int* contadorID)                  
 * \return int Return (-1) si Error [largo no valido o NULL pointer o no encuentra elementos con el valor buscado] - (0) si se elimina el elemento exitosamente
 *
 */
-int orquesta_baja(Orquesta array[], int sizeArray)                                      //cambiar orquesta
+int orquesta_baja(Orquesta array[], int sizeArray,int id)                                      //cambiar orquesta
 {
     int retorno=-1;
     int posicion;
-    int id;
     if(array!= NULL && sizeArray>=0)
     {
-        orquesta_listar(array,sizeArray);
-        utn_getUnsignedInt("\nID a cancelar: ","\nError",1,sizeof(int),1,sizeArray,1,&id);          //cambiar si no se busca por ID
+
         if(orquesta_buscarID(array,sizeArray,id,&posicion)==-1)                                   //cambiar si no se busca por ID
         {
             printf("\nNo existe este ID");                                                          //cambiar si no se busca por ID

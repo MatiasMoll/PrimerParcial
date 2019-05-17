@@ -21,7 +21,7 @@ int orquesta_Inicializar(Orquesta array[], int size);                           
 int orquesta_buscarEmpty(Orquesta array[], int size, int* posicion);                    //cambiar orquesta
 int orquesta_buscarID(Orquesta array[], int size, int valorBuscado, int* posicion);                    //cambiar orquesta
 int orquesta_alta(Orquesta array[], int size, int* contadorID);                          //cambiar orquesta
-int orquesta_baja(Orquesta array[], int sizeArray);                                      //cambiar orquesta
+int orquesta_baja(Orquesta array[], int sizeArray,int id);                                      //cambiar orquesta
 int orquesta_listar(Orquesta array[], int size);
 int orquesta_tipo(Orquesta unaOrquesta,char* tiposStr);                      //cambiar orquesta
 void orquesta_mock(Orquesta arrayOrquesta[], int size,int *contadorId);                      //cambiar orquesta

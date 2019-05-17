@@ -164,7 +164,7 @@ int musico_baja(Musico array[], int sizeArray)                                  
     int id;
     if(array!=NULL && sizeArray>0)
     {
-        utn_getUnsignedInt("\nID a cancelar: ","\nError",1,sizeof(int),1,sizeArray,1,&id);          //cambiar si no se busca por ID
+        utn_getUnsignedInt("\nID a cancelar: ","\nError",1,sizeof(int),0,sizeArray,1,&id);          //cambiar si no se busca por ID
         if(musico_buscarID(array,sizeArray,id,&posicion)==-1)                                   //cambiar si no se busca por ID
         {
             printf("\nNo existe este ID");                                                          //cambiar si no se busca por ID
@@ -183,7 +183,26 @@ int musico_baja(Musico array[], int sizeArray)                                  
     }
     return retorno;
 }
-
+int musico_buscarIdOrquesta(Musico array[], int size, int valorBuscado, int* posicion)                    //cambiar fantasma
+{
+    int retorno=-1;
+    int i;
+    if(array!= NULL && size>=0)
+    {
+        for(i=0;i<size;i++)
+        {
+            if(array[i].isEmpty==1)
+                continue;
+            else if(array[i].idOrquesta==valorBuscado)                                                   //cambiar campo varInt
+            {
+                retorno=0;
+                *posicion=i;
+                break;
+            }
+        }
+    }
+    return retorno;
+}
 //Modificar
 /** \brief Busca un elemento por ID y modifica sus campos
 * \param array musico Array de musico
@@ -216,7 +235,6 @@ int musico_modificar(Musico array[], int sizeArray)                             
     int posicion;
     int id;                                                                                         //cambiar si no se busca por ID
     int opcion;
-    int i;
     if(array!=NULL && sizeArray>0)
     {
         utn_getUnsignedInt("\nID a modificar: ","\nError",1,sizeof(int),1,sizeArray,1,&id);         //cambiar si no se busca por ID

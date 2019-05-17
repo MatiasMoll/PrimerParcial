@@ -132,7 +132,7 @@ int instrumento_alta(Instrumento array[], int size, int* contadorID)            
             (*contadorID)++;
             array[posicion].idUnico=*contadorID;
             array[posicion].isEmpty=0;
-            if(!utn_getTexto("\nIngrese Nombre de la Instrumento: ","\nError",1,TEXT_SIZE,1,array[posicion].nombre)&&
+            if(!utn_getName("\nIngrese Nombre de la Instrumento: ","\nError",1,TEXT_SIZE,1,array[posicion].nombre)&&
                 !utn_getUnsignedInt("\nIngrese tipo de la instrumento(1-Cuerdas, 2-Viento-Madera,3-Viento-Metal,4-Percusion: ","\nError",
                                         1,sizeof(int),1,10,1,&array[posicion].tipo))
             {

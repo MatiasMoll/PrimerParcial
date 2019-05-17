@@ -86,7 +86,7 @@
 
 1558042868 /home/alumno/Moll/PrimerParcial/Parcial_Moll/Validaciones.h
 
-1558052620 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/Instrumento.c
+1558053689 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/Instrumento.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -95,20 +95,20 @@
 
 1558050008 /home/alumno/Moll/PrimerParcial/Parcial_Moll/Instrumento.h
 
-1558052729 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/main.c
-	<stdio.h>
+1558054859 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/main.c
+	<stdio_ext.h>
 	<stdlib.h>
 	"Orquesta.h"
 	"Musico.h"
 	"Instrumento.h"
 	"utn.h"
 
-1558050981 /home/alumno/Moll/PrimerParcial/Parcial_Moll/Orquesta.h
+1558054851 /home/alumno/Moll/PrimerParcial/Parcial_Moll/Orquesta.h
 
-1558053174 /home/alumno/Moll/PrimerParcial/Parcial_Moll/Musico.h
+1558054492 /home/alumno/Moll/PrimerParcial/Parcial_Moll/Musico.h
 	"Instrumento.h"
 
-1558053431 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/Musico.c
+1558054492 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/Musico.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -116,7 +116,7 @@
 	"Musico.h"
 	"Instrumento.h"
 
-1558052768 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/Orquesta.c
+1558054868 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/Orquesta.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>

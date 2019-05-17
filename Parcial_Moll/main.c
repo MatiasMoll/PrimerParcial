@@ -13,6 +13,7 @@ int main()
     Orquesta array[QTY_ARRAY_ORQUESTA];
     orquesta_Inicializar(array,QTY_ARRAY_ORQUESTA);
     int contadorIdorquesta=0;
+    int idABorrar;
     orquesta_mock(array,QTY_ARRAY_ORQUESTA,&contadorIdorquesta);
 
 
@@ -49,12 +50,22 @@ int main()
                 if(orquesta_alta(array,QTY_ARRAY_ORQUESTA,&contadorIdorquesta))
                 {
                     orquesta_listar(array,QTY_ARRAY_ORQUESTA);
+                    if(musico_buscarIdOrquesta(arrayMusico,QTY_ARRAY_MUSICO,idABorrar,&posMusico))
+                    {
+                        musico_baja(arrayMusico,QTY_ARRAY_MUSICO);
+                    }
+
                 }
                 break;
 
             case 2:
                 __fpurge(stdin);
-                orquesta_baja(array,QTY_ARRAY_ORQUESTA);
+                orquesta_listar(array,QTY_ARRAY_ORQUESTA);
+                if(!utn_getUnsignedInt("\nID a cancelar: ","\nError",1,sizeof(int),1,QTY_ARRAY_ORQUESTA,1,&idABorrar))
+                {
+                    orquesta_baja(array,QTY_ARRAY_ORQUESTA,idABorrar);
+                }
+
                 break;
 
             case 3:
