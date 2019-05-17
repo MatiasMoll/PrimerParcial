@@ -1,0 +1,137 @@
+# depslib dependency file v1.0
+1557868237 source:/home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/fantasma.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"fantasma.h"
+
+1557868237 /home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/utn.h
+
+1557868237 /home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/fantasma.h
+
+1558050703 source:/home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"utn.h"
+
+1557868237 source:/home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1558042876 source:/home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/Get.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validaciones.h"
+
+1558042868 /home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/Validaciones.h
+
+1558042845 source:/home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/Validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1558050981 /home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/Orquesta.h
+
+1558050980 source:/home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/Orquesta.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Orquesta.h"
+
+1558047336 source:/home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/Instrumento.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Instrumento.h"
+
+1558050008 /home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/Instrumento.h
+
+1558050853 source:/home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/Musico.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558049220 /home/alumno/Moll/Programacion-Y-Laboratorio-1-UTN/Parcial_Moll/Musico.h
+	"Instrumento.h"
+
+1557868237 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/fantasma.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"fantasma.h"
+
+1557868237 /home/alumno/Moll/PrimerParcial/Parcial_Moll/utn.h
+
+1557868237 /home/alumno/Moll/PrimerParcial/Parcial_Moll/fantasma.h
+
+1558042876 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/Get.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validaciones.h"
+
+1558042868 /home/alumno/Moll/PrimerParcial/Parcial_Moll/Validaciones.h
+
+1558047336 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/Instrumento.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Instrumento.h"
+
+1558050008 /home/alumno/Moll/PrimerParcial/Parcial_Moll/Instrumento.h
+
+1558051550 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"utn.h"
+
+1558050981 /home/alumno/Moll/PrimerParcial/Parcial_Moll/Orquesta.h
+
+1558049220 /home/alumno/Moll/PrimerParcial/Parcial_Moll/Musico.h
+	"Instrumento.h"
+
+1558050853 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/Musico.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558051547 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/Orquesta.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Orquesta.h"
+
+1557868237 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1558042845 source:/home/alumno/Moll/PrimerParcial/Parcial_Moll/Validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
