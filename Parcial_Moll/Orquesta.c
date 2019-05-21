@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include "utn.h"
 #include "Orquesta.h" //cambiar por nombre entidad
+#define MAX_CHAR_TIPO 10
 
 
 /** \brief  To indicate that all position in the array are empty,
@@ -102,7 +103,6 @@ int orquesta_tipo(Orquesta unaOrquesta,char*tipos)
             break;
         }
         retorno = 1;
-
     }
     return retorno;
 }
@@ -131,8 +131,8 @@ int orquesta_alta(Orquesta array[], int size, int* contadorID)                  
             array[posicion].isEmpty=0;
             if(!utn_getTexto("\nIngrese Nombre de la Orquesta: ","\nError",1,TEXT_SIZE,1,array[posicion].nombre)&&
                     !utn_getTexto("\nIngrese lugar de origen de la orquesta: ","\nError",1,TEXT_SIZE,1,array[posicion].lugar)&&
-                    !utn_getUnsignedInt("\nIngrese tipo de la orquesta(1-Sinfonica, 2-Filarmonica,3-Camara): ","\nError",
-                                        1,sizeof(int),1,10,1,&array[posicion].tipo))
+                    !GET_Edad("\nIngrese tipo de la orquesta(1-Sinfonica, 2-Filarmonica,3-Camara): ","\nError",
+                                        1,3,1,&array[posicion].tipo))
             {
                 retorno=1;
             }
@@ -184,7 +184,7 @@ int orquesta_listar(Orquesta array[], int size)                      //cambiar o
 {
     int retorno=-1;
     int i;
-    char* tipoString;
+    char tipoString[MAX_CHAR_TIPO];
     if(array!=NULL && size>=0)
     {
         for(i=0; i<=size; i++)

@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include "utn.h"
 #include "Instrumento.h" //cambiar por nombre entidad
+#define MAX_CHAR_TIPO 15
 
 
 /** \brief  To indicate that all position in the array are empty,
@@ -132,7 +133,7 @@ int instrumento_alta(Instrumento array[], int size, int* contadorID)            
             (*contadorID)++;
             array[posicion].idUnico=*contadorID;
             array[posicion].isEmpty=0;
-            if(!utn_getName("\nIngrese Nombre de la Instrumento: ","\nError",1,TEXT_SIZE,1,array[posicion].nombre)&&
+            if(!utn_getName("\nIngrese Nombre de la Instrumento: ","\nError",1,MAX_CHAR_TIPO,1,array[posicion].nombre)&&
                 !utn_getUnsignedInt("\nIngrese tipo de la instrumento(1-Cuerdas, 2-Viento-Madera,3-Viento-Metal,4-Percusion: ","\nError",
                                         1,sizeof(int),1,10,1,&array[posicion].tipo))
             {
@@ -154,12 +155,13 @@ int instrumento_listar(Instrumento array[], int size)                      //cam
 {
     int retorno=-1;
     int i;
-    char* tipoString;
+    char tipoString[MAX_CHAR_TIPO];
+
     if(array!=NULL && size>=0)
     {
-        for(i=0; i<size; i++)
+        for(i=0; i<=size; i++)
         {
-            if(array[i].isEmpty==1)
+            if(array[i].isEmpty)
                 continue;
             else
             {

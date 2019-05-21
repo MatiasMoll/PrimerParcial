@@ -135,3 +135,65 @@
 	<string.h>
 	<ctype.h>
 
+1558384081 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Get.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validaciones.h"
+
+1558124154 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Validaciones.h
+
+1558454329 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Instrumento.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Instrumento.h"
+
+1558124154 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/utn.h
+
+1558124154 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Instrumento.h
+
+1558451074 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/main.c
+	<stdio_ext.h>
+	<stdlib.h>
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"utn.h"
+	"Get.h"
+
+1558124154 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Orquesta.h
+
+1558449386 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Musico.h
+	"Instrumento.h"
+
+1558449717 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Musico.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558385929 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Orquesta.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Orquesta.h"
+
+1558126597 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1558124154 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1558383630 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Get.h
+

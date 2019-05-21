@@ -32,7 +32,7 @@ int GET_String(char* msg, char* msgError, int minimo, int maximo, int reintentos
 }
 //----------------------------------------------------------------------------------------------------------------------------
 
-int GET_Int(char* msg, char* msgError, int minimo, int maximo, int reintentos, char* resultado)
+int GET_Int(char* msg, char* msgError, int minimo, int maximo, int reintentos, int* resultado)
 {
     int retorno = -1;
     char buffer[4096];
@@ -42,12 +42,12 @@ int GET_Int(char* msg, char* msgError, int minimo, int maximo, int reintentos, c
         {
             if(VAL_Int(buffer))
             {
-                resultado = buffer;
+                *resultado = atoi(buffer);
                 retorno = 1;
             }
         }else
             {
-                printf(msgError);
+                printf("%s",msgError);
             }
     }
     return retorno;
@@ -76,7 +76,7 @@ int GET_Name(char* msg, char* msgError, int minimo, int maximo, int reintentos, 
     return retorno;
 }
 
-int GET_Edad(char* msg, char* msgError, int minimo, int maximo, int reintentos, char* resultado)
+int GET_Edad(char* msg, char* msgError, int minimo, int maximo, int reintentos, int* resultado)
 {
     int retorno = -1;
     char buffer[maximo];
@@ -87,7 +87,8 @@ int GET_Edad(char* msg, char* msgError, int minimo, int maximo, int reintentos, 
             {
                 if(VAL_Edad(buffer, minimo, maximo))
                 {
-                    printf("%s", buffer);
+
+                    *resultado = atoi(buffer);
                     retorno  = 0;
                     break;
                 }else

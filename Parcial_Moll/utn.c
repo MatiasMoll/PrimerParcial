@@ -141,8 +141,7 @@ int isValidNumber(char* stringRecibido)
         }
     }
     return retorno;
-}
-//-------------------------------------------------
+}//-------------------------------------------------
 int utn_getSignedInt(char* msg, char* msgError, int minSize, int maxSize, int min, int max, int reintentos, int* input)
 {
     int retorno=-1;
