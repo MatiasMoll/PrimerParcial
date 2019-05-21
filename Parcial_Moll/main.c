@@ -66,10 +66,6 @@ int main()
                         orquesta_baja(array,QTY_ARRAY_ORQUESTA,idABorrar);
                         if(!musico_buscarIdOrquesta(arrayMusico,QTY_ARRAY_MUSICO,idABorrar,arrayABorrar))
                         {
-                            for(int i=0; arrayABorrar[i] != -1; i++)
-                            {
-                                printf("%d\n",arrayABorrar[i]);
-                            }
                             musico_bajaPorOrquesta(arrayMusico,arrayABorrar);
                         }
                     }
@@ -151,7 +147,6 @@ int main()
                 case 2:
                     instrumento_listar(arrayInstrumento,QTY_ARRAY_INSTRUMENTOS);                   //cambiar
                     break;
-
                 case 3:
                     break;
                 }

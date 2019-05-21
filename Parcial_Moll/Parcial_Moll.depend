@@ -143,7 +143,7 @@
 
 1558124154 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Validaciones.h
 
-1558454329 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Instrumento.c
+1558454518 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Instrumento.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -154,7 +154,7 @@
 
 1558124154 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Instrumento.h
 
-1558451074 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/main.c
+1558467512 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/main.c
 	<stdio_ext.h>
 	<stdlib.h>
 	"Orquesta.h"
