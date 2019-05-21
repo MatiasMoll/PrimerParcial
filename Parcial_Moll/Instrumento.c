@@ -144,6 +144,14 @@ int instrumento_alta(Instrumento array[], int size, int* contadorID)            
     return retorno;
 }
 
+void instrumento_listarUnInstrumento(Instrumento unInstrumento)
+{
+    char tipoString[MAX_CHAR_TIPO];
+    instrumento_tipo(unInstrumento, tipoString);
+    printf("Nombre: %s\nTipo: %s",
+            unInstrumento.nombre, tipoString);
+}
+
 //Listar
 /** \brief Lista los elementos de un array
 * \param array instrumento Array de instrumento

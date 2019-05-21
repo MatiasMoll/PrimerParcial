@@ -20,5 +20,6 @@ int instrumento_buscarEmpty(Instrumento array[], int size, int* posicion);      
 int instrumento_buscarID(Instrumento array[], int size, int valorBuscado, int* posicion);                    //cambiar instrumento
 int instrumento_alta(Instrumento array[], int size, int* contadorID);                          //cambiar instrumento
 int instrumento_tipo(Instrumento unaInstrumento,char* tiposStr);
+void instrumento_listarUnInstrumento(Instrumento unInstrumento);
 int instrumento_listar(Instrumento array[], int size);                     //cambiar instrumento
 void instrumento_mock(Instrumento arrayInstrumento[], int size,int *contadorId);

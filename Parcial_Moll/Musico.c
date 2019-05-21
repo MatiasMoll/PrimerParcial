@@ -4,6 +4,7 @@
 #include "utn.h"
 #include "Musico.h" //cambiar por nombre entidad
 #include "Instrumento.h"
+#include "Orquesta.h"
 #define QTY_ARRAY_ORQUESTA 50
 #define MAX_CHAR_TIPO 50
 
@@ -255,6 +256,31 @@ int musico_mostrarDatosPersonales(Musico array[],int sizeArray)
     }
     return retorno;
 }
+
+int musico_ordenarApellido(Musico *array, int sizeArray)
+{
+    int retorno = -1;
+    Musico aux;
+    int i;
+    int j;
+    if(array != NULL && sizeArray > 0)
+    {
+        for(i=0;i<sizeArray;i++)
+        {
+            for(j=0;j<=sizeArray;j++)
+            if(array[j].isEmpty)
+                continue;
+            else if (strcmp(array[i].apellido,array[j].apellido)<0)
+            {
+                aux = array[i];
+                array[i] = array[j];
+                array[j] = aux;
+            }
+        }
+        retorno = 0;
+    }
+    return retorno;
+}
 int musico_modificar(Musico array[], int sizeArray)                                //cambiar musico
 {
     int retorno=-1;
@@ -297,6 +323,26 @@ int musico_modificar(Musico array[], int sizeArray)                             
     return retorno;
 }
 
+int musico_listarUnMusico(Musico unMusico,Orquesta* arrayOrquesta,int sizeOrquesta,Instrumento* arrayInstrumento,int sizeInstrumento)
+{
+    int retorno = -1;
+    int posOrquesta;
+    int posInstrumento;
+    char tipoString[MAX_CHAR_TIPO];
+    if(arrayOrquesta != NULL)
+    {
+        orquesta_buscarID(arrayOrquesta, sizeOrquesta,unMusico.idOrquesta,&posOrquesta);
+        orquesta_tipo(arrayOrquesta[posOrquesta], tipoString);
+        instrumento_buscarID(arrayInstrumento, sizeInstrumento,unMusico.idInstrumento,&posInstrumento);
+        printf("\nID: %d\nNombre: %s\nApellido: %s\nEdad: %d\nNombre de Instrumento: %s\nNombre de la Orquesta: %s\n",
+            unMusico.idUnico,unMusico.nombre,unMusico.apellido,unMusico.edad,arrayInstrumento[posInstrumento].nombre,arrayOrquesta[posOrquesta].nombre);
+        retorno = 0;
+    }
+
+
+    return retorno;
+
+}
 
 //*****************************************
 //Listar
@@ -345,6 +391,7 @@ void musico_mock(Musico arrayMusico[], int size,int *contadorId)                
     //*******************************************************************
     arrayMusico[0].idUnico=*contadorId;
     arrayMusico[0].isEmpty=0;
+    arrayMusico[0].edad=22;
     arrayMusico[0].idOrquesta=2;
     arrayMusico[0].idInstrumento=1;
     strcpy(arrayMusico[0].nombre,"Matias");
@@ -353,26 +400,40 @@ void musico_mock(Musico arrayMusico[], int size,int *contadorId)                
 
     arrayMusico[1].idUnico=*contadorId;
     arrayMusico[1].isEmpty=0;
+    arrayMusico[1].edad=2;
     arrayMusico[1].idOrquesta=1;
-    arrayMusico[1].idInstrumento=2;
+    arrayMusico[1].idInstrumento=1;
     strcpy(arrayMusico[1].nombre,"Isabella");
     strcpy(arrayMusico[1].apellido,"Moll");
     *contadorId=*contadorId +1;
 
     arrayMusico[2].idUnico=*contadorId;
     arrayMusico[2].isEmpty=0;
+    arrayMusico[2].edad=22;
     arrayMusico[2].idOrquesta=1;
-    arrayMusico[2].idInstrumento=2;
+    arrayMusico[2].idInstrumento=3;
     strcpy(arrayMusico[2].nombre,"Noelia");
     strcpy(arrayMusico[2].apellido,"Neyra");
     *contadorId=*contadorId +1;
 
     arrayMusico[3].idUnico=*contadorId;
     arrayMusico[3].isEmpty=0;
+    arrayMusico[3].edad=30;
     arrayMusico[3].idOrquesta=2;
-    arrayMusico[3].idInstrumento=10;
-    strcpy(arrayMusico[3].nombre,"BBBBB");
-    strcpy(arrayMusico[3].apellido,"BBBBBB");
+    arrayMusico[3].idInstrumento=2;
+    strcpy(arrayMusico[3].nombre,"Santiago");
+    strcpy(arrayMusico[3].apellido,"Gaggia");
+    *contadorId=*contadorId +1;
+
+
+    arrayMusico[4].idUnico=*contadorId;
+    arrayMusico[4].isEmpty=0;
+    arrayMusico[4].edad=28;
+    arrayMusico[4].idOrquesta=2;
+    arrayMusico[4].idInstrumento=2;
+    strcpy(arrayMusico[4].nombre,"Aldana");
+    strcpy(arrayMusico[4].apellido,"Gaggia");
+
 
 }
 

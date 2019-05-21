@@ -80,7 +80,7 @@ int GET_Edad(char* msg, char* msgError, int minimo, int maximo, int reintentos, 
 {
     int retorno = -1;
     char buffer[maximo];
-    if(msg != NULL && msgError != NULL && minimo<maximo && reintentos>=0 && resultado != NULL)
+    if(msg != NULL && msgError != NULL && minimo<=maximo && reintentos>=0 && resultado != NULL)
     {
         do{
             if(GET_String(msg,msgError,1,3,reintentos,buffer))

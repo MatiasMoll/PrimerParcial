@@ -1,4 +1,5 @@
 #include "Instrumento.h"
+#include "Orquesta.h"
 #ifndef MUSICO_H_INCLUDED
 #define MUSICO_H_INCLUDED
 
@@ -29,6 +30,8 @@ int musico_baja(Musico array[], int sizeArray);
 int musico_bajaPorOrquesta(Musico array[],int* posABorrar);                                      //cambiar musico
 int musico_modificar(Musico array[], int sizeArray);
 int musico_mostrarDatosPersonales(Musico array[],int sizeArray);                            //cambiar musico
+int musico_ordenarApellido(Musico *array, int sizeArray);
+int musico_listarUnMusico(Musico unMusico,Orquesta* arrayOrquesta,int sizeOrquesta,Instrumento* arrayInstrumento,int sizeInstrumento);
 int musico_listar(Musico array[],Instrumento arrayI[],int sizeI, int size);                 //cambiar musico
 void musico_mock(Musico arrayMusico[], int size,int *contadorId);                      //cambiar musico
 

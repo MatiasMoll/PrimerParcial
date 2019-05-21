@@ -1,8 +1,11 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdio_ext.h>
 #include "utn.h"
+#include "Get.h"
 #include "Orquesta.h" //cambiar por nombre entidad
+#include "Musico.h"
 #define MAX_CHAR_TIPO 10
 
 
@@ -132,7 +135,7 @@ int orquesta_alta(Orquesta array[], int size, int* contadorID)                  
             if(!utn_getTexto("\nIngrese Nombre de la Orquesta: ","\nError",1,TEXT_SIZE,1,array[posicion].nombre)&&
                     !utn_getTexto("\nIngrese lugar de origen de la orquesta: ","\nError",1,TEXT_SIZE,1,array[posicion].lugar)&&
                     !GET_Edad("\nIngrese tipo de la orquesta(1-Sinfonica, 2-Filarmonica,3-Camara): ","\nError",
-                                        1,3,1,&array[posicion].tipo))
+                              1,3,1,&array[posicion].tipo))
             {
                 retorno=1;
             }
@@ -172,6 +175,20 @@ int orquesta_baja(Orquesta array[], int sizeArray,int id)                       
         }
     }
     return retorno;
+}
+
+
+int orquesta_listarUnaOrquesta(Orquesta unaOrquesta)
+{
+    int retorno = -1;
+    char tipoString[MAX_CHAR_TIPO];
+    orquesta_tipo(unaOrquesta, tipoString);
+    printf("\nId: %d\nNombre: %s\nLugar: %s\nTipo: %s",
+           unaOrquesta.idUnico,unaOrquesta.nombre,unaOrquesta.lugar,tipoString);
+    retorno = 0;
+
+    return retorno;
+
 }
 //Listar
 /** \brief Lista los elementos de un array

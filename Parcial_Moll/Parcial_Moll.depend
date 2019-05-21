@@ -197,3 +197,90 @@
 
 1558383630 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll/Get.h
 
+1558478440 source:/home/alumno/PrimerParcial/Parcial_Moll/Get.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validaciones.h"
+
+1558474692 /home/alumno/PrimerParcial/Parcial_Moll/Validaciones.h
+
+1558477679 source:/home/alumno/PrimerParcial/Parcial_Moll/Instrumento.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Instrumento.h"
+
+1558474692 /home/alumno/PrimerParcial/Parcial_Moll/utn.h
+
+1558477678 /home/alumno/PrimerParcial/Parcial_Moll/Instrumento.h
+
+1558481099 source:/home/alumno/PrimerParcial/Parcial_Moll/main.c
+	<stdio_ext.h>
+	<stdlib.h>
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"utn.h"
+	"Get.h"
+	"Informes.h"
+
+1558480966 /home/alumno/PrimerParcial/Parcial_Moll/Orquesta.h
+
+1558478440 /home/alumno/PrimerParcial/Parcial_Moll/Musico.h
+	"Instrumento.h"
+	"Orquesta.h"
+
+1558474692 /home/alumno/PrimerParcial/Parcial_Moll/Get.h
+
+1558480665 source:/home/alumno/PrimerParcial/Parcial_Moll/Musico.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Musico.h"
+	"Instrumento.h"
+	"Orquesta.h"
+
+1558480990 source:/home/alumno/PrimerParcial/Parcial_Moll/Orquesta.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	"utn.h"
+	"Get.h"
+	"Orquesta.h"
+	"Musico.h"
+
+1558474692 source:/home/alumno/PrimerParcial/Parcial_Moll/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1558474692 source:/home/alumno/PrimerParcial/Parcial_Moll/Validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1558482508 source:/home/alumno/PrimerParcial/Parcial_Moll/Informes.c
+	<stdio_ext.h>
+	<string.h>
+	<stdlib.h>
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"utn.h"
+	"Get.h"
+
+1558482162 /home/alumno/PrimerParcial/Parcial_Moll/Informes.h
+	<stdio_ext.h>
+	<stdlib.h>
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"utn.h"
+	"Get.h"
+
