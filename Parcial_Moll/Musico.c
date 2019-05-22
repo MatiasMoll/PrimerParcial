@@ -389,51 +389,58 @@ int musico_listar(Musico array[],Instrumento arrayI[],int sizeI, int size)      
 void musico_mock(Musico arrayMusico[], int size,int *contadorId)                      //cambiar musico
 {
     //*******************************************************************
-    arrayMusico[0].idUnico=*contadorId;
+    arrayMusico[0].idUnico=1;
     arrayMusico[0].isEmpty=0;
-    arrayMusico[0].edad=22;
-    arrayMusico[0].idOrquesta=2;
-    arrayMusico[0].idInstrumento=1;
-    strcpy(arrayMusico[0].nombre,"Matias");
-    strcpy(arrayMusico[0].apellido,"Moll");
-    *contadorId=*contadorId +1;
+    arrayMusico[0].edad=30;
+    arrayMusico[0].idOrquesta=1;
+    arrayMusico[0].idInstrumento=2;
+    strcpy(arrayMusico[0].nombre,"Mus1");
+    strcpy(arrayMusico[0].apellido,"AMus1");
+   // *contadorId=*contadorId +1;
 
-    arrayMusico[1].idUnico=*contadorId;
+    arrayMusico[1].idUnico=2;
     arrayMusico[1].isEmpty=0;
-    arrayMusico[1].edad=2;
-    arrayMusico[1].idOrquesta=1;
-    arrayMusico[1].idInstrumento=1;
-    strcpy(arrayMusico[1].nombre,"Isabella");
-    strcpy(arrayMusico[1].apellido,"Moll");
-    *contadorId=*contadorId +1;
+    arrayMusico[1].edad=20;
+    arrayMusico[1].idOrquesta=2;
+    arrayMusico[1].idInstrumento=5;
+    strcpy(arrayMusico[1].nombre,"Mus2");
+    strcpy(arrayMusico[1].apellido,"AMus2");
+    //*contadorId=*contadorId +1;
 
-    arrayMusico[2].idUnico=*contadorId;
+    arrayMusico[2].idUnico=3;
     arrayMusico[2].isEmpty=0;
-    arrayMusico[2].edad=22;
-    arrayMusico[2].idOrquesta=1;
-    arrayMusico[2].idInstrumento=3;
-    strcpy(arrayMusico[2].nombre,"Noelia");
-    strcpy(arrayMusico[2].apellido,"Neyra");
-    *contadorId=*contadorId +1;
+    arrayMusico[2].edad=25;
+    arrayMusico[2].idOrquesta=4;
+    arrayMusico[2].idInstrumento=2;
+    strcpy(arrayMusico[2].nombre,"Mus3");
+    strcpy(arrayMusico[2].apellido,"AMus3");
+    //*contadorId=*contadorId +1;
 
-    arrayMusico[3].idUnico=*contadorId;
+    arrayMusico[3].idUnico=4;
     arrayMusico[3].isEmpty=0;
-    arrayMusico[3].edad=30;
-    arrayMusico[3].idOrquesta=2;
-    arrayMusico[3].idInstrumento=2;
-    strcpy(arrayMusico[3].nombre,"Santiago");
-    strcpy(arrayMusico[3].apellido,"Gaggia");
-    *contadorId=*contadorId +1;
+    arrayMusico[3].edad=27;
+    arrayMusico[3].idOrquesta=4;
+    arrayMusico[3].idInstrumento=1;
+    strcpy(arrayMusico[3].nombre,"Mus4");
+    strcpy(arrayMusico[3].apellido,"AMus4");
+    //*contadorId=*contadorId +1;
 
 
-    arrayMusico[4].idUnico=*contadorId;
+    arrayMusico[4].idUnico=5;
     arrayMusico[4].isEmpty=0;
-    arrayMusico[4].edad=28;
-    arrayMusico[4].idOrquesta=2;
-    arrayMusico[4].idInstrumento=2;
-    strcpy(arrayMusico[4].nombre,"Aldana");
-    strcpy(arrayMusico[4].apellido,"Gaggia");
+    arrayMusico[4].edad=22;
+    arrayMusico[4].idOrquesta=1;
+    arrayMusico[4].idInstrumento=3;
+    strcpy(arrayMusico[4].nombre,"Mus5");
+    strcpy(arrayMusico[4].apellido,"AMus5");
 
-
+    arrayMusico[5].idUnico=6;
+    arrayMusico[5].isEmpty=0;
+    arrayMusico[5].edad=35;
+    arrayMusico[5].idOrquesta=3;
+    arrayMusico[5].idInstrumento=4;
+    strcpy(arrayMusico[5].nombre,"Mus6");
+    strcpy(arrayMusico[5].apellido,"AMus6");
+    *contadorId = 6;
 }
 

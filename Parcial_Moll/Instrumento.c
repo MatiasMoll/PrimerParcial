@@ -187,28 +187,34 @@ int instrumento_listar(Instrumento array[], int size)                      //cam
 void instrumento_mock(Instrumento arrayInstrumento[], int size,int *contadorId)                      //cambiar instrumento
 {
     //*******************************************************************
-    arrayInstrumento[0].idUnico=*contadorId;
+    arrayInstrumento[0].idUnico=1;
     arrayInstrumento[0].isEmpty=0;
     arrayInstrumento[0].tipo=1;
-    strcpy(arrayInstrumento[0].nombre,"Guitarra");
-    *contadorId = *contadorId +1;
+    strcpy(arrayInstrumento[0].nombre,"Instrumento1");
+    //*contadorId = *contadorId +1;
 
-    arrayInstrumento[1].idUnico=*contadorId;
+    arrayInstrumento[1].idUnico=2;
     arrayInstrumento[1].isEmpty=0;
-    arrayInstrumento[1].tipo=1;
-    strcpy(arrayInstrumento[1].nombre,"Guiatarra Electrica");
-    *contadorId = *contadorId +1;
+    arrayInstrumento[1].tipo=2;
+    strcpy(arrayInstrumento[1].nombre,"Instrumento2");
+    //*contadorId = *contadorId +1;
 
-    arrayInstrumento[2].idUnico=*contadorId;
+    arrayInstrumento[2].idUnico=3;
     arrayInstrumento[2].isEmpty=0;
     arrayInstrumento[2].tipo=2;
-    strcpy(arrayInstrumento[2].nombre,"Flauta");
-    *contadorId = *contadorId +1;
+    strcpy(arrayInstrumento[2].nombre,"Instrumento3");
+    //*contadorId = *contadorId +1;
 
-    arrayInstrumento[3].idUnico=*contadorId;
+    arrayInstrumento[3].idUnico=4;
     arrayInstrumento[3].isEmpty=0;
-    arrayInstrumento[3].tipo=4;
-    strcpy(arrayInstrumento[3].nombre,"Tambores");
+    arrayInstrumento[3].tipo=3;
+    strcpy(arrayInstrumento[3].nombre,"Instrumento4");
+
+    arrayInstrumento[4].idUnico=5;
+    arrayInstrumento[4].isEmpty=0;
+    arrayInstrumento[4].tipo=4;
+    strcpy(arrayInstrumento[4].nombre,"Instrumento5");
+    *contadorId = 5;
 
 
 }

@@ -224,32 +224,32 @@ int orquesta_listar(Orquesta array[], int size)                      //cambiar o
 void orquesta_mock(Orquesta arrayOrquesta[], int size,int *contadorId)                      //cambiar orquesta
 {
     //*******************************************************************
-    arrayOrquesta[0].idUnico=*contadorId;
+    arrayOrquesta[0].idUnico=1;
     arrayOrquesta[0].isEmpty=0;
-    arrayOrquesta[0].tipo=2;
-    strcpy(arrayOrquesta[0].nombre,"Filarmonica");
-    strcpy(arrayOrquesta[0].lugar,"Springfield");
-    *contadorId = *contadorId +1;
+    arrayOrquesta[0].tipo=1;
+    strcpy(arrayOrquesta[0].nombre,"Orquesta1");
+    strcpy(arrayOrquesta[0].lugar,"Lugar1");
+    //*contadorId = *contadorId +1;
 
-    arrayOrquesta[1].idUnico=*contadorId;
+    arrayOrquesta[1].idUnico=2;
     arrayOrquesta[1].isEmpty=0;
-    arrayOrquesta[1].tipo=1;
-    strcpy(arrayOrquesta[1].nombre,"Sinfonica");
-    strcpy(arrayOrquesta[1].lugar,"Beethoven");
-    *contadorId = *contadorId +1;
+    arrayOrquesta[1].tipo=2;
+    strcpy(arrayOrquesta[1].nombre,"Orquesta2");
+    strcpy(arrayOrquesta[1].lugar,"Lugar2");
+    //*contadorId = *contadorId +1;
 
-    arrayOrquesta[2].idUnico=*contadorId;
+    arrayOrquesta[2].idUnico=3;
     arrayOrquesta[2].isEmpty=0;
-    arrayOrquesta[2].tipo=1;
-    strcpy(arrayOrquesta[2].nombre,"La sinfonica");
-    strcpy(arrayOrquesta[2].lugar,"Lanus");
-    *contadorId = *contadorId +1;
+    arrayOrquesta[2].tipo=3;
+    strcpy(arrayOrquesta[2].nombre,"Orquesta3");
+    strcpy(arrayOrquesta[2].lugar,"Lugar3");
+    //*contadorId = *contadorId +1;
 
-    arrayOrquesta[3].idUnico=*contadorId;
+    arrayOrquesta[3].idUnico=4;
     arrayOrquesta[3].isEmpty=0;
-    arrayOrquesta[3].tipo=3;
-    strcpy(arrayOrquesta[3].nombre,"La Camara de Comercio");
-    strcpy(arrayOrquesta[3].lugar,"Varela");
-
+    arrayOrquesta[3].tipo=2;
+    strcpy(arrayOrquesta[3].nombre,"Orquesta4");
+    strcpy(arrayOrquesta[3].lugar,"Lugar4");
+    *contadorId = 4;
 }
 
