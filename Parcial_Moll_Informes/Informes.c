@@ -157,7 +157,7 @@ int informes_orquestaMenosMusicos(Musico* arrayMusico, int sizeMusico,Orquesta* 
             orquesta_buscarID(array,sizeOrquesta,arrayIdMenosMusicos[i],&posId);
             orquesta_listarUnaOrquesta(array[posId]);
         }
-        printf("\nTodas las orquestas listadas poseen %d musicos\n",minimo);
+        printf("\nTodas las orquestas listadas poseen %d musico/s\n",minimo);
         retorno =0;
     }
     return retorno;
@@ -170,6 +170,7 @@ int informes_orquestasCompletas(Orquesta* array, int sizeOrquesta, Musico* array
     int contadorViento;
     int contadorCuerda;
     int contadorPercusion;
+    int flag=0;
     int j;
     int i;
     int posIdMusico;
@@ -205,9 +206,14 @@ int informes_orquestasCompletas(Orquesta* array, int sizeOrquesta, Musico* array
                 }while(j!=arrayContador[i]);
                 if(contadorCuerda>=4 && contadorViento>=4 && contadorPercusion>=1)
                 {
+                    flag = 1;
                     orquesta_listarUnaOrquesta(array[arrayId[i]]);
                 }
             }
+        }
+        if(!flag)
+        {
+            printf("\nNo hay orquestas completas.\n");
         }
         retorno = 0;
       }
@@ -267,7 +273,7 @@ int informes_instrumentosPorOrquesta(int idOrquestaBuscada, Instrumento* arrayIn
             {
                 instrumento_buscarID(arrayIns,sizeIns,arrayMusico[i].idInstrumento,&posIns);
                 instrumento_listarUnInstrumento(arrayIns[posIns]);
-                printf("\nNombre del Musico: %s\n",arrayMusico[i].nombre);
+                printf("Nombre del Musico: %s\n",arrayMusico[i].nombre);
             }
             retorno = 0;
         }

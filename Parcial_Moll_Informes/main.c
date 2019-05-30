@@ -112,7 +112,6 @@ int main()
                 case 2:
                     __fpurge(stdin);
                     musico_mostrarDatosPersonales(arrayMusico,QTY_ARRAY_MUSICO);
-                    //musico_listar(arrayMusico,arrayInstrumento,QTY_ARRAY_INSTRUMENTOS,QTY_ARRAY_MUSICO);
                     musico_modificar(arrayMusico,QTY_ARRAY_MUSICO);
                     break;
 
@@ -174,6 +173,7 @@ int main()
                         informes_orquestaMenosSeisMusicos(arrayMusico,QTY_ARRAY_MUSICO,array,QTY_ARRAY_ORQUESTA);
                         break;
                     case 4:
+                        system("clear");
                         orquesta_listar(array,QTY_ARRAY_ORQUESTA);
                         if(!GET_Edad("\nIngrese el id de la Orquesta: ","Id Invalido",0,QTY_ARRAY_ORQUESTA,2,&idAListar))
                         {
@@ -183,6 +183,10 @@ int main()
                             {
                                 printf("Error");
                             }
+                        break;
+                    case 5:
+                        system("clear");
+                        informes_orquestasCompletas(array,QTY_ARRAY_ORQUESTA,arrayMusico,QTY_ARRAY_MUSICO,arrayInstrumento,QTY_ARRAY_INSTRUMENTOS);
                         break;
                     case 6:
                         informes_orquestaMenosMusicos(arrayMusico,QTY_ARRAY_MUSICO,array,QTY_ARRAY_ORQUESTA);

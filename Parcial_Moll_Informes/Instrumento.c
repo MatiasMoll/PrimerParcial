@@ -148,7 +148,7 @@ void instrumento_listarUnInstrumento(Instrumento unInstrumento)
 {
     char tipoString[MAX_CHAR_TIPO];
     instrumento_tipo(unInstrumento, tipoString);
-    printf("Nombre: %s\nTipo: %s",
+    printf("\nNombre: %s\nTipo: %s\n",
             unInstrumento.nombre, tipoString);
 }
 
@@ -163,8 +163,6 @@ int instrumento_listar(Instrumento array[], int size)                      //cam
 {
     int retorno=-1;
     int i;
-    char tipoString[MAX_CHAR_TIPO];
-
     if(array!=NULL && size>=0)
     {
         for(i=0; i<=size; i++)
@@ -173,9 +171,7 @@ int instrumento_listar(Instrumento array[], int size)                      //cam
                 continue;
             else
             {
-                instrumento_tipo(array[i],tipoString);
-                printf("\nID: %d\nNombre: %s\nTipo: %s",
-                       array[i].idUnico,array[i].nombre,tipoString);
+                instrumento_listarUnInstrumento(array[i]);
             }
         }
         retorno=0;

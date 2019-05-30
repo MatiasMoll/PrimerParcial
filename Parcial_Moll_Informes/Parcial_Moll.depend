@@ -372,3 +372,91 @@
 	"utn.h"
 	"Get.h"
 
+1558491756 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/Get.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validaciones.h"
+
+1558491756 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/Validaciones.h
+
+1559248910 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/Informes.c
+	<stdio_ext.h>
+	<string.h>
+	<stdlib.h>
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"utn.h"
+	"Get.h"
+
+1558643043 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/Orquesta.h
+
+1558491756 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/Musico.h
+	"Instrumento.h"
+	"Orquesta.h"
+
+1558491756 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/Instrumento.h
+
+1558491756 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/utn.h
+
+1558491756 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/Get.h
+
+1559248737 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/Instrumento.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Instrumento.h"
+
+1559235552 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/Musico.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"Get.h"
+	"Musico.h"
+	"Instrumento.h"
+	"Orquesta.h"
+
+1559248441 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/Orquesta.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	"utn.h"
+	"Get.h"
+	"Orquesta.h"
+	"Musico.h"
+
+1558491756 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1558491756 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/Validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1559248980 source:/home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/main.c
+	<stdio_ext.h>
+	<stdlib.h>
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"utn.h"
+	"Get.h"
+	"Informes.h"
+
+1559232639 /home/matias/Escritorio/Matias/PrimerParcial/Parcial_Moll_Informes/Informes.h
+	<stdio_ext.h>
+	<stdlib.h>
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"utn.h"
+	"Get.h"
+
